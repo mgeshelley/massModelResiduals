@@ -38,3 +38,6 @@ model.rbf.lengthscale.constrain_bounded(0.1, 10.)
 # HMC inference of kernel hyperparameters
 hmc = gpy.inference.mcmc.HMC(model, stepsize=5e-2)
 samples = hmc.sample(num_samples=num_samples)
+
+# Save samples
+np.savetxt(name+'_samples.dat',samples)
