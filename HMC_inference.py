@@ -40,4 +40,4 @@ hmc = gpy.inference.mcmc.HMC(model, stepsize=5e-2)
 samples = hmc.sample(num_samples=num_samples)
 
 # Save samples
-np.savetxt(name+'_samples.dat',samples)
+np.savetxt('data/'+name+'_samples.dat',samples)
