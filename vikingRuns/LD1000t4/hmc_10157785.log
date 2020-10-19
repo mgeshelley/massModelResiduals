@@ -1,0 +1,22 @@
+reconstraining parameters GP_regression.rbf.variance
+reconstraining parameters GP_regression.rbf.lengthscale
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 10157785
+Cluster: viking
+User/Group: mges501/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 2-07:31:52
+CPU Efficiency: 79.35% of 2-21:58:50 core-walltime
+Job Wall-clock time: 06:59:53
+Memory Utilized: 805.61 MB
+Memory Efficiency: 39.34% of 2.00 GB
+ Requested wall clock time: 10:00:00
+    Actual wall clock time: 06:59:53
+Wall clock time efficiency: 70.0%
+           Job queued time: 00:00:13
