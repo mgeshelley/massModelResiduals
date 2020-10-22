@@ -3,7 +3,7 @@ import GPy as gpy
 
 
 ## OPTIONS ##
-name = 'DZ'
+name = 'LD'
 thin = 1
 num_samples = 1000
 

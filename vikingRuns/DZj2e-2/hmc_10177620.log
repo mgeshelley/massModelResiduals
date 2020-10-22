@@ -1,0 +1,30 @@
+reconstraining parameters GP_regression.rbf.variance
+reconstraining parameters GP_regression.rbf.lengthscale
+RBF parameters after model initialisation:
+[1. 1. 1.]
+RBF parameters after ML optimisation
+[0.40119615 2.55357214 1.86523479]
+RBF parameters after adding small normal random numbers
+[0.40118128 2.55369866 1.86513469]
+RBF parameters as means of HMC samples
+[0.33181174 2.56656084 1.11979436]
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 10177620
+Cluster: viking
+User/Group: mges501/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 2-18:22:29
+CPU Efficiency: 82.02% of 3-08:55:40 core-walltime
+Job Wall-clock time: 08:05:34
+Memory Utilized: 804.15 MB
+Memory Efficiency: 39.27% of 2.00 GB
+ Requested wall clock time: 10:00:00
+    Actual wall clock time: 08:05:34
+Wall clock time efficiency: 80.9%
+           Job queued time: 00:00:01
