@@ -28,7 +28,7 @@ noise = 0.0235
 nwalkers = 40
 
 # Chain length
-nchain = 1000
+nchain = 2000
 
 # Show progress bar
 progress_bar = False
@@ -47,19 +47,17 @@ rng.shuffle(shuffled, axis=0)
 # Select random indices of data for training, at random
 trainIdx = np.random.choice(shuffled.shape[0], int(round(trainFrac*shuffled.shape[0])), replace=False)
 
-# Save to file the indices of training data
-np.save('trainIdx', trainIdx)
-trainIdx = np.load('trainIdx.npy')
-
 # Create training and testing data sets
 train = shuffled[trainIdx,:]
 test = np.delete(shuffled, trainIdx, axis=0)
 
-# Input parameters and observations, for training and testing data sets
+# Save to file the data sets
+np.save('trainingData', train)
+np.save('testingData', test)
+
+# Input parameters and observations for training data
 X = train[:,1:3]
 Y = np.atleast_2d(train[:,3]).T
-Xtest = test[:,1:3]
-Ytest = np.atleast_2d(test[:,3]).T
 
 
 ## MODEL SETUP ##
@@ -81,6 +79,9 @@ print(model.rbf.param_array)
 model.optimize()
 print('RBF parameters after ML optimisation:')
 print(model.rbf.param_array)
+
+# Save ML parameters
+np.savetxt('ML_values.dat', model.rbf.param_array)
 
 
 ## WALKER START POSITIONS ##
