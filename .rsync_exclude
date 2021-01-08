@@ -3,5 +3,6 @@
 *.sh
 .ipynb_checkpoints
 data
+dzcode
 plots
 vikingRuns
