@@ -1,8 +1,12 @@
 *.ipynb
+*.npy
 *.pdf
 *.sh
 .ipynb_checkpoints
 data
 dzcode
+GP_training
 plots
 vikingRuns
+mass16.txt
+DZ_mass_table_noerror.dat

@@ -1,6 +1,9 @@
-import numpy as np
-import GPy as gpy
+import pickle
 from multiprocessing import Pool
+
+import numpy as np
+
+import GPy as gpy
 import emcee
 
 
@@ -15,7 +18,7 @@ def log_prob(p, model):
 
 
 # Load model
-with open('GP_training/model.pkl', 'rb') as f:
+with open('inferenceModels/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Fix GP noise parameter to average scale of experimental uncertainty
